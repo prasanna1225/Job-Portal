@@ -1,7 +1,7 @@
-package com.telusko.JobApp.controller;
+package com.example.JobApp.controller;
 
-import com.telusko.JobApp.model.JobPost;
-import com.telusko.JobApp.service.JobService;
+import com.example.JobApp.model.JobPost;
+import com.example.JobApp.service.JobService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,7 +14,7 @@ import java.util.List;
 public class JobController {
 
     @Autowired
-//    private JobService service;
+   private JobService service;
 
 
     @GetMapping({"/", "home"})
